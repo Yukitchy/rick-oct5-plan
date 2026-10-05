@@ -120,7 +120,7 @@ def sheet():
         f'<header class="sh"><h1>{html.escape(w["title"])}</h1><p>{facts}</p></header>'
         f'<div class="sphotos">{photos}</div>'
         f'<ol class="sroute">{route}</ol>'
-        + (f'<figure class="smap"><img src="img/route-{A["id"]}.png" alt="Route map"><figcaption>' + ' → '.join(f'<b>{i + 1}</b> {html.escape(x)}' for i, x in enumerate(A['stops'])) + '</figcaption></figure>' if os.path.exists(f'img/route-{A["id"]}.png') else '') +
+        + (f'<figure class="smap"><img src="img/route-{A["id"]}.png" alt="Route map"><figcaption>' + ' → '.join(f'<b>{i + 1}</b> {html.escape(x)}' + (' (optional)' if i >= A.get('opt_from', 99) else '') for i, x in enumerate(A.get('stop_names', A['stops']))) + '</figcaption></figure>' if os.path.exists(f'img/route-{A["id"]}.png') else '') +
         f'<div class="sgrid"><div class="smeet"><h2>{html.escape(w["meet_h2"])}</h2><p class="saddr">{addr}</p><ol class="sdirs">{dirs}</ol></div>'
         f'<div class="sws"><h2>{html.escape(w["ws_h2"])}</h2><div class="swsin">{im(w["ws_photo"][0], w["ws_photo"][1])}<ul>{ws}</ul></div><p class="snote">{html.escape(PAGE["workshop"]["note"])}</p></div></div>'
         f'<div class="sshops"><h2>{html.escape(w["shops_h2"])}</h2><table class="sshop">{shops}</table></div>'
