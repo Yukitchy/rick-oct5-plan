@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """コース選択ページ(エディトリアル版)。page.json と courses.json を編集して python3 build.py -> index.html
 COURSES / PAGE / PH の名前は course-picker の engine/extract.py が読むので変えない。"""
-import json, html
+import json, html, os
 
 PH = json.load(open('photos.json'))
 gm = lambda q: 'https://www.google.com/maps/search/?api=1&query=' + q.replace(' ', '+')
@@ -120,6 +120,7 @@ def sheet():
         f'<header class="sh"><h1>{html.escape(w["title"])}</h1><p>{facts}</p></header>'
         f'<div class="sphotos">{photos}</div>'
         f'<ol class="sroute">{route}</ol>'
+        + (f'<figure class="smap"><img src="img/route-{A["id"]}.png" alt="Route map"><figcaption>' + ' → '.join(f'<b>{i + 1}</b> {html.escape(x)}' for i, x in enumerate(A['stops'])) + '</figcaption></figure>' if os.path.exists(f'img/route-{A["id"]}.png') else '') +
         f'<div class="sgrid"><div class="smeet"><h2>{html.escape(w["meet_h2"])}</h2><p class="saddr">{addr}</p><ol class="sdirs">{dirs}</ol></div>'
         f'<div class="sws"><h2>{html.escape(w["ws_h2"])}</h2><div class="swsin">{im(w["ws_photo"][0], w["ws_photo"][1])}<ul>{ws}</ul></div><p class="snote">{html.escape(PAGE["workshop"]["note"])}</p></div></div>'
         f'<div class="sshops"><h2>{html.escape(w["shops_h2"])}</h2><table class="sshop">{shops}</table></div>'
@@ -275,6 +276,7 @@ footer{{border-top:1px solid var(--ink);font-size:13px;color:var(--mute)}} foote
  .sroute{{list-style:none;margin:0 0 9pt;padding:0;display:flex;align-items:stretch}} .sroute li{{flex:1;position:relative;background:#e4dfd2;padding:4pt 6pt 4pt 9pt;margin-right:7pt;clip-path:polygon(0 0,calc(100% - 6pt) 0,100% 50%,calc(100% - 6pt) 100%,0 100%,6pt 50%)}}
  .sroute li.w{{background:#e60012;color:#fff;flex:1.6}} .sroute li.end{{background:#111;color:#fff;margin-right:0;flex:.9}} .sroute li:first-child{{clip-path:polygon(0 0,calc(100% - 6pt) 0,100% 50%,calc(100% - 6pt) 100%,0 100%);padding-left:6pt}}
  .sroute b{{display:block;font-size:9.5pt;font-variant-numeric:tabular-nums}} .sroute span{{display:block;font-size:7.5pt;line-height:1.2;font-weight:600}}
+ .smap{{margin:0 0 8pt;break-inside:avoid}} .smap img{{display:block;width:100%;height:auto}} .smap+.sgrid{{margin-top:0}} .sheet:has(.smap) .sphotos img{{height:66pt}} .smap figcaption{{font-size:7.5pt;line-height:1.25;margin-top:2pt;color:#333}} .smap b{{display:inline-block;background:#e60012;color:#fff;border-radius:50%;width:10pt;height:10pt;line-height:10pt;text-align:center;font-size:7pt}}
  .sgrid{{display:grid;grid-template-columns:1fr 1fr;gap:0 14pt;margin-bottom:8pt;break-inside:avoid}}
  .saddr{{margin:0 0 5pt;font-weight:700;font-size:10.5pt}} .sdirs{{margin:0;padding:0;list-style:none;font-size:9.5pt}} .sdirs li{{display:flex;gap:6pt;margin-bottom:3pt}} .sdirs i{{flex:none;font-style:normal;font-weight:800;color:#fff;background:#e60012;width:13pt;height:13pt;border-radius:50%;text-align:center;line-height:13pt;font-size:8.5pt}}
  .swsin{{display:grid;grid-template-columns:78pt 1fr;gap:7pt}} .swsin img{{width:78pt;height:78pt;object-fit:cover;object-position:center 30%}} .sws ul{{margin:0;padding-left:11pt;font-size:9.5pt}} .sws li{{margin-bottom:2pt}} .snote{{margin:5pt 0 0;padding:4pt 6pt;background:#eee8dc;font-size:8.5pt}}
