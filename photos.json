@@ -1,0 +1,57 @@
+{
+ "A": {
+  "card": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Saturday_in_Ginza.jpg/960px-Saturday_in_Ginza.jpg",
+   "title": "Saturday in Ginza.jpg",
+   "lic": "CC BY-SA"
+  },
+  "detail": [
+   {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Tsukiji_Outer_Market_-02.jpg/960px-Tsukiji_Outer_Market_-02.jpg",
+    "title": "Tsukiji Outer Market -02.jpg",
+    "lic": "CC BY-SA"
+   },
+   {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Saturday_in_Ginza.jpg/960px-Saturday_in_Ginza.jpg",
+    "title": "Saturday in Ginza.jpg",
+    "lic": "CC BY-SA"
+   },
+   {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/GINZA_SIX_Atrium_View_201912.jpg/960px-GINZA_SIX_Atrium_View_201912.jpg",
+    "title": "GINZA SIX Atrium View 201912.jpg",
+    "lic": "CC BY-SA"
+   },
+   {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/GINZA_SIX_Roof_Garden_201806.jpg/960px-GINZA_SIX_Roof_Garden_201806.jpg",
+    "title": "GINZA SIX Roof Garden 201806.jpg",
+    "lic": "CC BY-SA"
+   }
+  ],
+  "food": []
+ },
+ "_hero": {
+  "card": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Toyosu_fish_market-4b.jpg/960px-Toyosu_fish_market-4b.jpg",
+   "title": "Toyosu fish market-4b.jpg",
+   "lic": "CC BY-SA 4.0"
+  },
+  "detail": [
+   {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Toyosu_fish_market-4a.jpg/960px-Toyosu_fish_market-4a.jpg",
+    "title": "Toyosu fish market-4a.jpg",
+    "lic": "CC BY-SA 4.0"
+   },
+   {
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Teamlab_toyosu.jpg/960px-Teamlab_toyosu.jpg",
+    "title": "Teamlab toyosu.jpg",
+    "lic": "CC BY-SA"
+   },
+   {
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/72/Tamagoyaki_by_jetalone_in_Tsukiji_fish_market%2C_Tokyo.jpg",
+    "title": "Tamagoyaki by jetalone in Tsukiji fish market, Tokyo.jpg",
+    "lic": "CC BY 2.0"
+   }
+  ],
+  "food": []
+ }
+}

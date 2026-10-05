@@ -1,0 +1,131 @@
+[
+ {
+  "id": "A",
+  "name": "Toyosu, Tsukiji, then Ginza on foot",
+  "tag": "Auction at 5:30, lunch at 12:00, done about 15:30",
+  "why": "The early part is all near the market and you do it at your own pace. After lunch everything is in Ginza, flat and on foot, and it ends a short walk from your hotel.",
+  "chips": [],
+  "bars": [
+   [
+    30,
+    85,
+    "Tuna auction",
+    "s"
+   ],
+   [
+    90,
+    165,
+    "Breakfast at the market",
+    "s"
+   ],
+   [
+    180,
+    285,
+    "teamLab Planets",
+    "s"
+   ],
+   [
+    300,
+    400,
+    "Tsukiji Outer Market",
+    "s"
+   ],
+   [
+    420,
+    495,
+    "Lunch at Ginza Sushimasa",
+    "w"
+   ],
+   [
+    505,
+    630,
+    "Ginza on foot to the hotel",
+    "w"
+   ]
+  ],
+  "steps": [
+   [
+    "5:30",
+    "Tuna auction deck, Toyosu",
+    "Check-in at the PR corner, Block 7, 3F. Reception number 53241. Ends about 6:25."
+   ],
+   [
+    "6:30",
+    "Breakfast at the market",
+    "Sushi or a seafood bowl in the market restaurant area."
+   ],
+   [
+    "8:00",
+    "teamLab Planets",
+    "Premium Pass x2. Show the QR at the Information Center, no queue. About 1.5 hours."
+   ],
+   [
+    "10:00",
+    "Tsukiji Outer Market",
+    "Taxi, about 15 minutes. Tamagoyaki, grilled scallops, kitchen knives."
+   ],
+   [
+    "12:00",
+    "Lunch at Ginza Sushimasa, with Yuuki",
+    "Counter for three. Short lunch courses: 5 small dishes and 7 pieces of nigiri (¥9,900), or 7 pieces with a small chirashi bowl (¥4,950). We choose at the table."
+   ],
+   [
+    "13:25",
+    "Itoya",
+    "Twelve floors of paper, pens and letter sets. Gifts that pack flat."
+   ],
+   [
+    "14:05",
+    "Mitsukoshi food hall",
+    "Wagashi, tea, rice crackers and boxed sweets from all over Japan."
+   ],
+   [
+    "14:40",
+    "Kimuraya",
+    "The bakery that made the first sweet bean bun, in 1874. On the Ginza crossing."
+   ],
+   [
+    "14:50",
+    "GINZA SIX roof garden and tea",
+    "A free garden on the roof, then matcha at Nakamura Tokichi on the 4th floor."
+   ],
+   [
+    "15:30",
+    "Back at the hotel",
+    "About 10 minutes on foot to THE BLOSSOM HIBIYA."
+   ]
+  ],
+  "stops": [
+   "Toyosu Market Block 7",
+   "teamLab Planets TOKYO",
+   "Tsukiji Outer Market",
+   "Ginza Sushimasa 5-14-5 Ginza",
+   "Ginza Itoya",
+   "Ginza Mitsukoshi",
+   "GINZA SIX",
+   "The Blossom Hibiya Tokyo"
+  ],
+  "moves": "Market → teamLab: 1 stop on the Yurikamome or a 5 min taxi. teamLab → Tsukiji: taxi about 15 min. Tsukiji → Sushimasa: 10 min on foot. Everything after lunch is on foot.",
+  "good": "A full day that never needs a long train ride.",
+  "mind": "The Ginza walk after lunch is a suggestion. If you would rather rest, we stop whenever you like. Lunch is ordered at the table; the booking is for seats only.",
+  "links": [
+   [
+    "teamLab Planets: your tickets",
+    "https://teamlabplanets.dmm.com/mytickets/bcc446ac088a3ef9b3"
+   ],
+   [
+    "Ginza Sushimasa (official)",
+    "https://www.ginza-sushimasa.com/"
+   ],
+   [
+    "Itoya (official)",
+    "https://www.ito-ya.co.jp/"
+   ],
+   [
+    "GINZA SIX (official)",
+    "https://ginza6.tokyo/"
+   ]
+  ],
+  "food": []
+ }
+]
